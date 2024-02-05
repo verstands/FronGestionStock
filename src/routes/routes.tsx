@@ -1,8 +1,16 @@
 import { Routes, Route } from "react-router-dom"
-const routes = () => {
+import Layout from "../components/Layout"
+import Dashboad from "../pages/Dashboad"
+const Routers = () => {
   return (
-    <div>routes</div>
+    <>
+        <Routes>
+            <Route element={<Layout />}>
+                <Route path="/" element={<Dashboad />} />
+            </Route>
+        </Routes>
+    </>
   )
 }
 
-export default routes
+export default Routers
