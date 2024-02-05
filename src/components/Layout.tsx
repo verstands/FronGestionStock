@@ -1,5 +1,5 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Layout = () => {
     return (
@@ -75,58 +75,58 @@ const Layout = () => {
 
                         <ul className="menu-inner py-1">
                             <li className="menu-item active">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/" className="menu-link">
                                     <i className="menu-icon tf-icons bx bx-home-circle"></i>
                                     <div data-i18n="Analytics">Dashboard</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/achat" className="menu-link">
                                     <i className="menu-icon tf-icons bx bx-collection"></i>
                                     <div data-i18n="Analytics">Achat</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/vente" className="menu-link">
                                 <i className="menu-icon bx bx-package"></i>
                                     <div data-i18n="Analytics">Ventes</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/etat" className="menu-link">
                                 <i className="menu-icon bx bx-x-circle"></i>
                                     <div data-i18n="Analytics">Etat</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/caisse" className="menu-link">
                                 <i className="menu-icon bx bx-store"></i>
                                     <div data-i18n="Analytics">Caisse</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/statistique" className="menu-link">
                                 <i className="menu-icon bx bx-bar-chart-alt-2"></i>
                                     <div data-i18n="Analytics">Statistique</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/parametre" className="menu-link">
                                 <i className="menu-icon bx bx-cog"></i>
                                     <div data-i18n="Analytics">Parametre</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/maintenance" className="menu-link">
                                 <i className="menu-icon bx bx-wrench"></i>
                                     <div data-i18n="Analytics">Maintenance</div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu-item">
-                                <a href="index.html" className="menu-link">
+                                <Link to="/logout" className="menu-link">
                                 <i className="menu-icon bx bx-log-out"></i>
                                     <div data-i18n="Analytics">Se deconnecter</div>
-                                </a>
+                                </Link>
                             </li>
 
                         </ul>
