@@ -1,36 +1,44 @@
-import React from 'react'
+import React from 'react';
+import TableAchat from '../components/AchatComponent/TableAchat';
+
+interface AchatProps {
+    columns: any[];
+    data: any[];
+}
 
 const Achat = () => {
+
     return (
         <>
-            <div className="card">
-                <div className="d-flex align-items-end row">
-                    <div className="col-sm-7">
-                        <div className="card-body">
-                            <h5 className="card-title text-primary">Congratulations John! 🎉</h5>
-                            <p className="mb-4">
-                                You have done <span className="fw-bold">72%</span> more sales today. Check your new badge in
-                                your profile.
-                            </p>
-
-                            <a href="javascript:;" className="btn btn-sm btn-outline-primary">View Badges</a>
+            <div className="container-xxl flex-grow-1 container-p-y">
+                <div className="card">
+                    <div className="d-flex align-items-end row">
+                        <div className="col-sm-7">
+                            <div className="card-body">
+                                <h5 className="card-title text-primary">Liste des achats</h5>
+                            </div>
+                        </div>
+                        <div className="col-sm-5 text-center text-sm-left">
+                            <div className="card-body">
+                                <button  className="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                    <i className="menu-icon bx bx-plus"></i> Faire un achat
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-5 text-center text-sm-left">
-                        <div className="card-body pb-0 px-0 px-md-4">
-                            <img
-                                src="../assets/img/illustrations/man-with-laptop-light.png"
-                                height="140"
-                                alt="View Badge User"
-                                data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                                data-app-light-img="illustrations/man-with-laptop-light.png"
-                            />
-                        </div>
+                </div>
+                <TableAchat />
+
+            </div>
+            <div className="modal fade bd-example-modal-lg" tabIndex={-1}  role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-lg">
+                    <div className="modal-content">
+                        ...
                     </div>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Achat
+export default Achat;

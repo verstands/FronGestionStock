@@ -88,43 +88,43 @@ const Layout = () => {
                             </li>
                             <li className="menu-item">
                                 <Link to="/vente" className="menu-link">
-                                <i className="menu-icon bx bx-package"></i>
+                                    <i className="menu-icon bx bx-package"></i>
                                     <div data-i18n="Analytics">Ventes</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
                                 <Link to="/etat" className="menu-link">
-                                <i className="menu-icon bx bx-x-circle"></i>
+                                    <i className="menu-icon bx bx-x-circle"></i>
                                     <div data-i18n="Analytics">Etat</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
                                 <Link to="/caisse" className="menu-link">
-                                <i className="menu-icon bx bx-store"></i>
+                                    <i className="menu-icon bx bx-store"></i>
                                     <div data-i18n="Analytics">Caisse</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
                                 <Link to="/statistique" className="menu-link">
-                                <i className="menu-icon bx bx-bar-chart-alt-2"></i>
+                                    <i className="menu-icon bx bx-bar-chart-alt-2"></i>
                                     <div data-i18n="Analytics">Statistique</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
                                 <Link to="/parametre" className="menu-link">
-                                <i className="menu-icon bx bx-cog"></i>
+                                    <i className="menu-icon bx bx-cog"></i>
                                     <div data-i18n="Analytics">Parametre</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
                                 <Link to="/maintenance" className="menu-link">
-                                <i className="menu-icon bx bx-wrench"></i>
+                                    <i className="menu-icon bx bx-wrench"></i>
                                     <div data-i18n="Analytics">Maintenance</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
                                 <Link to="/logout" className="menu-link">
-                                <i className="menu-icon bx bx-log-out"></i>
+                                    <i className="menu-icon bx bx-log-out"></i>
                                     <div data-i18n="Analytics">Se deconnecter</div>
                                 </Link>
                             </li>
@@ -215,10 +215,11 @@ const Layout = () => {
                                             <li>
                                                 <a className="dropdown-item" href="auth-login-basic.html">
                                                     <i className="bx bx-power-off me-2"></i>
-                                                    <span className="align-middle">Se deconnecter</span>
+                                                    <span className="align-middle">Ses</span>
                                                 </a>
                                             </li>
                                         </ul>
+                                        
                                     </li>
 
                                 </ul>
