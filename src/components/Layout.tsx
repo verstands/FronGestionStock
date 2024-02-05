@@ -15,7 +15,6 @@ const Layout = () => {
                                         viewBox="0 0 25 42"
                                         version="1.1"
                                         xmlns="http://www.w3.org/2000/svg"
-                                       
                                     >
                                         <defs>
                                             <path
@@ -64,7 +63,7 @@ const Layout = () => {
                                         </g>
                                     </svg>
                                 </span>
-                                <span className="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+                                <span className="app-brand-text demo menu-text fw-bolder ms-2">Gstock</span>
                             </a>
 
                             <a href="javascript:void(0);" className="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -75,7 +74,6 @@ const Layout = () => {
                         <div className="menu-inner-shadow"></div>
 
                         <ul className="menu-inner py-1">
-                          
                             <li className="menu-item active">
                                 <a href="index.html" className="menu-link">
                                     <i className="menu-icon tf-icons bx bx-home-circle"></i>
@@ -83,317 +81,156 @@ const Layout = () => {
                                 </a>
                             </li>
                             <li className="menu-item">
-                                <a href="javascript:void(0);" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-layout"></i>
-                                    <div data-i18n="Layouts">Layouts</div>
-                                </a>
-
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="layouts-without-menu.html" className="menu-link">
-                                            <div data-i18n="Without menu">Without menu</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="layouts-without-navbar.html" className="menu-link">
-                                            <div data-i18n="Without navbar">Without navbar</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="layouts-container.html" className="menu-link">
-                                            <div data-i18n="Container">Container</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="layouts-fluid.html" className="menu-link">
-                                            <div data-i18n="Fluid">Fluid</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="layouts-blank.html" className="menu-link">
-                                            <div data-i18n="Blank">Blank</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li className="menu-header small text-uppercase">
-                                <span className="menu-header-text">Pages</span>
-                            </li>
-                            <li className="menu-item">
-                                <a href="javascript:void(0);" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-dock-top"></i>
-                                    <div data-i18n="Account Settings">Account Settings</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="pages-account-settings-account.html" className="menu-link">
-                                            <div data-i18n="Account">Account</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="pages-account-settings-notifications.html" className="menu-link">
-                                            <div data-i18n="Notifications">Notifications</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="pages-account-settings-connections.html" className="menu-link">
-                                            <div data-i18n="Connections">Connections</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item">
-                                <a href="javascript:void(0);" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-lock-open-alt"></i>
-                                    <div data-i18n="Authentications">Authentications</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="auth-login-basic.html" className="menu-link" target="_blank">
-                                            <div data-i18n="Basic">Login</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="auth-register-basic.html" className="menu-link" target="_blank">
-                                            <div data-i18n="Basic">Register</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="auth-forgot-password-basic.html" className="menu-link" target="_blank">
-                                            <div data-i18n="Basic">Forgot Password</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item">
-                                <a href="javascript:void(0);" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-cube-alt"></i>
-                                    <div data-i18n="Misc">Misc</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="pages-misc-error.html" className="menu-link">
-                                            <div data-i18n="Error">Error</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="pages-misc-under-maintenance.html" className="menu-link">
-                                            <div data-i18n="Under Maintenance">Under Maintenance</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li className="menu-header small text-uppercase"><span className="menu-header-text">Components</span></li>
-
-                            <li className="menu-item">
-                                <a href="cards-basic.html" className="menu-link">
+                                <a href="index.html" className="menu-link">
                                     <i className="menu-icon tf-icons bx bx-collection"></i>
-                                    <div data-i18n="Basic">Cards</div>
+                                    <div data-i18n="Analytics">Achat</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-package"></i>
+                                    <div data-i18n="Analytics">Ventes</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-x-circle"></i>
+                                    <div data-i18n="Analytics">Etat</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-store"></i>
+                                    <div data-i18n="Analytics">Caisse</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-bar-chart-alt-2"></i>
+                                    <div data-i18n="Analytics">Statistique</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-cog"></i>
+                                    <div data-i18n="Analytics">Parametre</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-wrench"></i>
+                                    <div data-i18n="Analytics">Maintenance</div>
+                                </a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="index.html" className="menu-link">
+                                <i className="menu-icon bx bx-log-out"></i>
+                                    <div data-i18n="Analytics">Se deconnecter</div>
                                 </a>
                             </li>
 
-                            <li className="menu-item">
-                                <a href="javascript:void(0)" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-box"></i>
-                                    <div data-i18n="User interface">User interface</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="ui-accordion.html" className="menu-link">
-                                            <div data-i18n="Accordion">Accordion</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-alerts.html" className="menu-link">
-                                            <div data-i18n="Alerts">Alerts</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-badges.html" className="menu-link">
-                                            <div data-i18n="Badges">Badges</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-buttons.html" className="menu-link">
-                                            <div data-i18n="Buttons">Buttons</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-carousel.html" className="menu-link">
-                                            <div data-i18n="Carousel">Carousel</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-collapse.html" className="menu-link">
-                                            <div data-i18n="Collapse">Collapse</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-dropdowns.html" className="menu-link">
-                                            <div data-i18n="Dropdowns">Dropdowns</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-footer.html" className="menu-link">
-                                            <div data-i18n="Footer">Footer</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-list-groups.html" className="menu-link">
-                                            <div data-i18n="List Groups">List groups</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-modals.html" className="menu-link">
-                                            <div data-i18n="Modals">Modals</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-navbar.html" className="menu-link">
-                                            <div data-i18n="Navbar">Navbar</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-offcanvas.html" className="menu-link">
-                                            <div data-i18n="Offcanvas">Offcanvas</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-pagination-breadcrumbs.html" className="menu-link">
-                                            <div data-i18n="Pagination &amp; Breadcrumbs">Pagination &amp; Breadcrumbs</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-progress.html" className="menu-link">
-                                            <div data-i18n="Progress">Progress</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-spinners.html" className="menu-link">
-                                            <div data-i18n="Spinners">Spinners</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-tabs-pills.html" className="menu-link">
-                                            <div data-i18n="Tabs &amp; Pills">Tabs &amp; Pills</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-toasts.html" className="menu-link">
-                                            <div data-i18n="Toasts">Toasts</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-tooltips-popovers.html" className="menu-link">
-                                            <div data-i18n="Tooltips & Popovers">Tooltips &amp; popovers</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="ui-typography.html" className="menu-link">
-                                            <div data-i18n="Typography">Typography</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li className="menu-item">
-                                <a href="javascript:void(0)" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-copy"></i>
-                                    <div data-i18n="Extended UI">Extended UI</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="extended-ui-perfect-scrollbar.html" className="menu-link">
-                                            <div data-i18n="Perfect Scrollbar">Perfect scrollbar</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="extended-ui-text-divider.html" className="menu-link">
-                                            <div data-i18n="Text Divider">Text Divider</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li className="menu-item">
-                                <a href="icons-boxicons.html" className="menu-link">
-                                    <i className="menu-icon tf-icons bx bx-crown"></i>
-                                    <div data-i18n="Boxicons">Boxicons</div>
-                                </a>
-                            </li>
-
-                            <li className="menu-header small text-uppercase"><span className="menu-header-text">Forms &amp; Tables</span></li>
-                            <li className="menu-item">
-                                <a href="javascript:void(0);" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-detail"></i>
-                                    <div data-i18n="Form Elements">Form Elements</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="forms-basic-inputs.html" className="menu-link">
-                                            <div data-i18n="Basic Inputs">Basic Inputs</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="forms-input-groups.html" className="menu-link">
-                                            <div data-i18n="Input groups">Input groups</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item">
-                                <a href="javascript:void(0);" className="menu-link menu-toggle">
-                                    <i className="menu-icon tf-icons bx bx-detail"></i>
-                                    <div data-i18n="Form Layouts">Form Layouts</div>
-                                </a>
-                                <ul className="menu-sub">
-                                    <li className="menu-item">
-                                        <a href="form-layouts-vertical.html" className="menu-link">
-                                            <div data-i18n="Vertical Form">Vertical Form</div>
-                                        </a>
-                                    </li>
-                                    <li className="menu-item">
-                                        <a href="form-layouts-horizontal.html" className="menu-link">
-                                            <div data-i18n="Horizontal Form">Horizontal Form</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li className="menu-item">
-                                <a href="tables-basic.html" className="menu-link">
-                                    <i className="menu-icon tf-icons bx bx-table"></i>
-                                    <div data-i18n="Tables">Tables</div>
-                                </a>
-                            </li>
-                            <li className="menu-header small text-uppercase"><span className="menu-header-text">Misc</span></li>
-                            <li className="menu-item">
-                                <a
-                                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                                    target="_blank"
-                                    className="menu-link"
-                                >
-                                    <i className="menu-icon tf-icons bx bx-support"></i>
-                                    <div data-i18n="Support">Support</div>
-                                </a>
-                            </li>
-                            <li className="menu-item">
-                                <a
-                                    href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                                    target="_blank"
-                                    className="menu-link"
-                                >
-                                    <i className="menu-icon tf-icons bx bx-file"></i>
-                                    <div data-i18n="Documentation">Documentation</div>
-                                </a>
-                            </li>
                         </ul>
                     </aside>
-                    <Outlet />
+                    <div className="layout-page">
+
+
+                        <nav
+                            className="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                            id="layout-navbar"
+                        >
+                            <div className="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                                <a className="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                                    <i className="bx bx-menu bx-sm"></i>
+                                </a>
+                            </div>
+
+                            <div className="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+                                <div className="navbar-nav align-items-center">
+                                    <div className="nav-item d-flex align-items-center">
+                                        <i className="bx bx-search fs-4 lh-0"></i>
+                                        <input
+                                            type="text"
+                                            className="form-control border-0 shadow-none"
+                                            placeholder="Search..."
+                                            aria-label="Search..."
+                                        />
+                                    </div>
+                                </div>
+
+                                <ul className="navbar-nav flex-row align-items-center ms-auto">
+                                    <li className="nav-item lh-1 me-3">
+                                        <a
+                                            className="github-button"
+
+                                            data-icon="octicon-star"
+                                            data-size="large"
+                                            data-show-count="true"
+                                            aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
+                                        >Rabby Kikwele</a
+                                        >
+                                    </li>
+
+
+                                    <li className="nav-item navbar-dropdown dropdown-user dropdown">
+                                        <a className="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                            <div className="avatar avatar-online">
+                                                <img src="../assets/img/avatars/1.png" className="w-px-40 h-auto rounded-circle" />
+                                            </div>
+                                        </a>
+                                        <ul className="dropdown-menu dropdown-menu-end">
+                                            <li>
+                                                <a className="dropdown-item" href="#">
+                                                    <div className="d-flex">
+                                                        <div className="flex-shrink-0 me-3">
+                                                            <div className="avatar avatar-online">
+                                                                <img src="../assets/img/avatars/1.png" className="w-px-40 h-auto rounded-circle" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex-grow-1">
+                                                            <span className="fw-semibold d-block">Rabby kikwele</span>
+                                                            <small className="text-muted">Admin</small>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div className="dropdown-divider"></div>
+                                            </li>
+                                            <li>
+                                                <a className="dropdown-item" href="#">
+                                                    <i className="bx bx-user me-2"></i>
+                                                    <span className="align-middle">Mon profile</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a className="dropdown-item" href="#">
+                                                    <i className="bx bx-cog me-2"></i>
+                                                    <span className="align-middle">Parametre</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div className="dropdown-divider"></div>
+                                            </li>
+                                            <li>
+                                                <a className="dropdown-item" href="auth-login-basic.html">
+                                                    <i className="bx bx-power-off me-2"></i>
+                                                    <span className="align-middle">Se deconnecter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                        <div className="content-wrapper">
+                            <Outlet />
+                        </div>
+                    </div>
                 </div>
+                <div className="layout-overlay layout-menu-toggle"></div>
             </div>
-            
         </>
     )
 }

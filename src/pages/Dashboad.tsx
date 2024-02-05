@@ -1,10 +1,11 @@
 import React from 'react'
-import Recherche from '../components/Recherche'
+import NumberCompeur from '../components/NumberCompeur'
 
 const Dashboad = () => {
     return (
         <>
-            <Recherche />
+          <NumberCompeur />   
+            
         </>
     )
 }
