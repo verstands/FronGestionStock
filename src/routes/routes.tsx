@@ -8,6 +8,13 @@ import Etat from "../pages/Etat"
 import Maintenance from "../pages/Maintenance"
 import Parametre from "../pages/Parametre"
 import Statistique from "../pages/Statistique"
+import AddAchat from "../components/AchatComponent/AddAchat"
+import Fournisseur from "../pages/Fournisseur"
+import AddFournisseur from "../components/Fournisseur/AddFournisseur"
+import TableCommande from "../components/Approvisionnement/TableCommande"
+import Addcommande from "../components/Approvisionnement/Addcommande"
+import SuiviCommande from "../components/Approvisionnement/SuiviCommande"
+import GestionFacture from "../components/Approvisionnement/GestionFacture"
 const Routers = () => {
   return (
     <>
@@ -15,6 +22,13 @@ const Routers = () => {
             <Route element={<Layout />}>
                 <Route path="/" element={<Dashboad />} />
                 <Route path="/achat" element={<Achat />} />
+                <Route path="/addArticle" element={<AddAchat />} />
+                <Route path="/fournisseur" element={<Fournisseur />} />
+                <Route path="/addfournisseur" element={<AddFournisseur />} />
+                <Route path="/commande" element={<TableCommande />} />
+                <Route path="/addcommande" element={<Addcommande />} />
+                <Route path="/suivicommande" element={<SuiviCommande />} />
+                <Route path="/GestionFacture" element={<GestionFacture />} />
                 <Route path="/vente" element={<Vente />} />
                 <Route path="/caisse" element={<Caisse />} />
                 <Route path="/etat" element={<Etat />} />

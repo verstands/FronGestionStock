@@ -1,7 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
-const Layout = () => {
+
+interface MenuItem {
+    title: string;
+    subMenuItems: SubMenuItem[];
+    icon: string;
+}
+
+interface SubMenuItem {
+    title: string;
+    href: string;
+
+}
+
+
+const Layout: React.FC = () => {
+    const menuItems: MenuItem[] = [
+        {
+            title: 'Approvisionnement',
+            icon: 'menu-icon bx bx-package',
+            subMenuItems: [
+                { title: 'Passer des commande', href: 'commande' },
+                { title: 'Suivre les statuts des commandes en cours', href: 'suivicommande' },
+                { title: 'Gestion des factures', href: 'GestionFacture' },
+            ],
+        },
+        {
+            title: 'Transferts',
+            icon: 'menu-icon bx bx-transfer',
+            subMenuItems: [
+                { title: 'Effectuer un transferts', href: 'layouts-without-menu.html' },
+                { title: 'Suivre l\'historique des transferts', href: 'layouts-without-navbar.html' },
+            ],
+        },
+        {
+            title: 'États de stock ',
+            icon: 'menu-icon bx bx-x-circle',
+            subMenuItems: [
+                { title: 'Rapports sur l\'état du stock', href: 'layouts-without-menu.html' },
+                { title: 'graphiques sur l\'etat des stock', href: 'layouts-without-navbar.html' },
+            ],
+        },
+        {
+            title: 'Parametre',
+            icon: 'menu-icon bx bx-cog',
+            subMenuItems: [
+                { title: 'Configuration des alertes de stock', href: 'layouts-without-menu.html' },
+            ],
+        },
+        {
+            title: 'Aide',
+            icon: 'menu-icon bx bx-help-circle',
+            subMenuItems: [
+                { title: 'Fournir des tutoriels ou des guides', href: 'layouts-without-menu.html' },
+                { title: 'FAQ', href: 'layouts-without-navbar.html' },
+            ],
+        },
+    ];
+
+    const [activeSubMenu, setActiveSubMenu] = useState<number | null>(null);
+
+    const handleMouseEnter = (index: number) => {
+        setActiveSubMenu(index);
+    };
+
+    const handleMouseLeave = () => {
+        setActiveSubMenu(null);
+    };
     return (
         <>
             <div className="layout-wrapper layout-content-navbar">
@@ -63,7 +129,7 @@ const Layout = () => {
                                         </g>
                                     </svg>
                                 </span>
-                                <span className="app-brand-text demo menu-text fw-bolder ms-2">Gstock</span>
+                                <span className="app-brand-text demo menu-text fw-bolder ms-2">G-stock</span>
                             </a>
 
                             <a href="javascript:void(0);" className="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -83,45 +149,41 @@ const Layout = () => {
                             <li className="menu-item">
                                 <Link to="/achat" className="menu-link">
                                     <i className="menu-icon tf-icons bx bx-collection"></i>
-                                    <div data-i18n="Analytics">Achat</div>
+                                    <div data-i18n="Analytics">Inventaire</div>
                                 </Link>
                             </li>
                             <li className="menu-item">
-                                <Link to="/vente" className="menu-link">
-                                    <i className="menu-icon bx bx-package"></i>
-                                    <div data-i18n="Analytics">Ventes</div>
+                                <Link to="/fournisseur" className="menu-link">
+                                    <i className="bx bx-group menu-icon"></i>
+                                    <div data-i18n="Analytics">Fournisseur</div>
                                 </Link>
                             </li>
-                            <li className="menu-item">
-                                <Link to="/etat" className="menu-link">
-                                    <i className="menu-icon bx bx-x-circle"></i>
-                                    <div data-i18n="Analytics">Etat</div>
-                                </Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/caisse" className="menu-link">
-                                    <i className="menu-icon bx bx-store"></i>
-                                    <div data-i18n="Analytics">Caisse</div>
-                                </Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/statistique" className="menu-link">
-                                    <i className="menu-icon bx bx-bar-chart-alt-2"></i>
-                                    <div data-i18n="Analytics">Statistique</div>
-                                </Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/parametre" className="menu-link">
-                                    <i className="menu-icon bx bx-cog"></i>
-                                    <div data-i18n="Analytics">Parametre</div>
-                                </Link>
-                            </li>
-                            <li className="menu-item">
-                                <Link to="/maintenance" className="menu-link">
-                                    <i className="menu-icon bx bx-wrench"></i>
-                                    <div data-i18n="Analytics">Maintenance</div>
-                                </Link>
-                            </li>
+                            {menuItems.map((menuItem, index) => (
+                                <li
+                                    className="menu-item"
+                                    key={index}
+                                    onMouseEnter={() => handleMouseEnter(index)}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+
+                                    <a href="javascript:void(0);" className="menu-link menu-toggle">
+                                        <i className={menuItem.icon}></i>
+                                        {menuItem.title}
+                                    </a>
+
+                                    {activeSubMenu === index && (
+                                        <ul className="">
+                                            {menuItem.subMenuItems.map((subMenuItem, subIndex) => (
+                                                <li className="menu-item" key={subIndex}>
+                                                    <a href={subMenuItem.href} className="menu-link">
+                                                        {subMenuItem.title}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </li>
+                            ))}
                             <li className="menu-item">
                                 <Link to="/logout" className="menu-link">
                                     <i className="menu-icon bx bx-log-out"></i>
@@ -130,10 +192,9 @@ const Layout = () => {
                             </li>
 
                         </ul>
+
                     </aside>
                     <div className="layout-page">
-
-
                         <nav
                             className="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
                             id="layout-navbar"
@@ -215,11 +276,11 @@ const Layout = () => {
                                             <li>
                                                 <a className="dropdown-item" href="auth-login-basic.html">
                                                     <i className="bx bx-power-off me-2"></i>
-                                                    <span className="align-middle">Ses</span>
+                                                    <span className="align-middle">Se deconnecter</span>
                                                 </a>
                                             </li>
                                         </ul>
-                                        
+
                                     </li>
 
                                 </ul>

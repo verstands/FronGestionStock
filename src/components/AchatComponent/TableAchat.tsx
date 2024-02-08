@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 
 const TableAchat = () => {
@@ -8,9 +8,9 @@ const TableAchat = () => {
             <div className="container-xxl flex-grow-1 container-p-y">
                 <div className="card">
                     <div className="card-header">
-                        <div className='d-flex align-items-end row'>
+                        <div className='d-flex items-center   row'>
                             <h5 className='col-sm-8'>
-                                Recherche
+                                <input type="text" placeholder='Recherche...' className='form-control' />
                             </h5>
                             <div className='col-sm-4 '>
                                 <i className="bx bx-file-excel me-2"></i>
@@ -28,53 +28,31 @@ const TableAchat = () => {
                             <thead>
                                 <tr className="text-nowrap">
                                     <th>#</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
-                                    <th>Table heading</th>
+                                    <th>Nom</th>
+                                    <th>Qte</th>
+                                    <th>Prix</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
-                                    <td>Table cell</td>
+                                    <td >
+                                        <span className="border bg-danger border-danger rounded text-white p-1">Table cell</span>
+                                    </td>
+                                    <td>30</td>
+                                    <td>200$</td>
+                                    <td className='d-flex gap-1'>
+                                        <a href='' className='border p-1 rounded border-secondary'>
+                                            <i className='bx bx-edit text-success'></i>
+                                        </a>
+                                        <a href='' className='border p-1 rounded border-secondary'>
+                                            <i className='bx bx-trash'></i>
+                                        </a>
+                                        <a href='' className='border p-1 rounded border-secondary'>
+                                            <i className='bx bx-eyeicon'></i>
+                                        </a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

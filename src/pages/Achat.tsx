@@ -1,10 +1,7 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import TableAchat from '../components/AchatComponent/TableAchat';
 
-interface AchatProps {
-    columns: any[];
-    data: any[];
-}
+
 
 const Achat = () => {
 
@@ -15,28 +12,21 @@ const Achat = () => {
                     <div className="d-flex align-items-end row">
                         <div className="col-sm-7">
                             <div className="card-body">
-                                <h5 className="card-title text-primary">Liste des achats</h5>
+                                <h5 className="card-title text-primary"><i className='bx bx-file'></i>  Les articles</h5>
                             </div>
                         </div>
                         <div className="col-sm-5 text-center text-sm-left">
                             <div className="card-body">
-                                <button  className="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
-                                    <i className="menu-icon bx bx-plus"></i> Faire un achat
-                                </button>
+                                <Link to="/addArticle" className="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                    <i className="menu-icon bx bx-plus"></i> Ajouer un article
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
                 <TableAchat />
-
             </div>
-            <div className="modal fade bd-example-modal-lg" tabIndex={-1}  role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div className="modal-dialog modal-lg">
-                    <div className="modal-content">
-                        ...
-                    </div>
-                </div>
-            </div>
+            
         </>
     );
 };
